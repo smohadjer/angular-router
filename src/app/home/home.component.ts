@@ -20,11 +20,11 @@ export class HomeComponent {
   constructor(private router: Router) {}
 
   goto(url: string, id: string) {
-    //this.router.navigate([url, { id: id} ]);
+    this.router.navigate([url, id]);
 
-    this.router.navigate(
-      [url],
-      { queryParams: { id: id } }
-    );
+    // this.router.navigate(
+    //   [url],
+    //   { queryParams: { id: id } }
+    // );
   }
 }
